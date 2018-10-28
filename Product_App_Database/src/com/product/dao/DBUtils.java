@@ -8,9 +8,9 @@ public class DBUtils {
 	
 	public static Connection getConnection() {
 		try {
-			Class.forName("oracle.jdbc.driver.OracleDriver");
+			Class.forName("com.mysql.jdbc.Driver");
 			if(con==null) {
-				con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "password-1");
+				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "root1234");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
