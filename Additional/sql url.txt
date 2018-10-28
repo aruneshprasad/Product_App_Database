@@ -1,0 +1,2 @@
+Class.forName("com.mysql.jdbc.Driver");
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "system", "aA1!bB2@cC3#");
